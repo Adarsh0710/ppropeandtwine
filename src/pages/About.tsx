@@ -1,5 +1,6 @@
 import React from 'react';
 import { Factory, Users, Globe, Award } from 'lucide-react';
+import PPTwine from "../components/assets/PPTwine.jpeg";
 
 const About = () => {
   const stats = [
@@ -45,7 +46,7 @@ const About = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/5427711/pexels-photo-5427711.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={PPTwine}
                 alt="Manufacturing Facility"
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />
