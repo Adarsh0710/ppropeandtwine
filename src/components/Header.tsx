@@ -1,7 +1,9 @@
+
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, MessageCircle } from 'lucide-react';
-import Logo from './Logo';
+
+import RopeLogo from '../components/assets/ropelogo.png'; 
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +24,12 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3">
-              <Logo />
+              {/* ✅ Replace with image */}
+              <img
+                src={RopeLogo}
+                alt="Rope Logo"
+                className="h-10 w-auto object-contain"
+              />
             </Link>
           </div>
 
